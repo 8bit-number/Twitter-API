@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block body %}
+
+
+{% if error %}
+{{ error }}
+{% endif %}
+
+<form action="/users" method="post" >
+    <input type="text" name="name" placeholder="show locations">
+    <button type="submit" class="btn btn-success">Retrieve</button>
+</form>
+
+{% endblock %}
